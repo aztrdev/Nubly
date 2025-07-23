@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+  <title>Nubly</title>
+</head>
+<body>
+  
+  <div class="video-container">
+    <video id="video-fondo" autoplay muted loop playsinline>
+      <source id="video-source" src="./videos/default.mp4" type="video/mp4">
+    </video>
+
+  <div class="container">
+    <!-- Sección izquierda: clima principal -->
+    <section class="weather-main">
+      <div class="branding">Nubly</div>
+      <div class="temperature-info">
+        <h1 class="temperature">26°</h1>
+        <div class="location-info">
+          <p>London</p>
+          <p class="date">10:36 – Tuesday, 22 Oct '19</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sección derecha: detalles -->
+    <section class="weather-sidebar">
+      
+      <!-- Buscador -->
+      <div class="search-bar">
+        <input type="text" placeholder="¿Dónde quieres saber el clima?" />
+        <hr>
+      </div>
+      
+      <!-- Lista de ciudades -->
+      <ul class="city-list">
+      </ul>
+
+      <hr>
+
+      <!-- Detalles del clima -->
+      <div class="detail">
+        <span class="info">Nubes</span>
+        <span class="cloud">12%</span>
+      </div>
+      <div class="detail">
+        <span class="info">Humedad</span>
+        <span class="humidity">78%</span>
+      </div>
+      <div class="detail">
+        <span class="info">Viento</span>
+        <span class="wind">1km/h</span>
+      </div>
+      <div class="detail">
+        <span class="info">Lluvia</span>
+        <span class="rain">0mm</span>
+      </div>
+
+      <div class="detail">
+        <span class="info">Descripción</span>
+        <span class="description">Sunny</span>
+      </div>
+      
+      <hr>
+
+    </section>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
